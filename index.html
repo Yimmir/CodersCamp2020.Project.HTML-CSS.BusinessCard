@@ -8,28 +8,44 @@
     <title>CodersCamp | Projekt 1 - HTML i CSS</title>
     <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <nav>
-    <a id="a1" href="">Start</a>
-    <a id="a2" href="">O mnie</a>
-    <a id="a3" href="">Kontakt</a>
-    <a id="a4" href="">PL</a>
-    <a id="a5" href="">ENG</a>
+    <a id="a1" href="#start">Start</a>
+    <a id="a2" href="#about">O mnie</a>
+    <a id="a3" href="#end">Kontakt</a>
+    <a id="a4" href=""><img src="assets/pl.png" alt="PL"></a>
+    <a id="a5" href=""><img src="assets/uk.png" alt="ENG"></a>
 </nav>
-<header>
-    <h1>
-        Matysiak
-    </h1>
+<header id="start">
+    <div class="title">
+        <img id="logo" src="assets/logo.png">
+        <h1 id="hello">
+            MATEUSZ LESZNIEWSKI
+        </h1>
+        <h2 id="subt">
+            lorem ipsum
+        </h2>
+        <img id="arrow1" src="assets/arrow1.png" alt="arrow1">
+    </div>
+    <div class="titlebg">
+        <img id="ship" src="assets/ship.png" alt="https://pl.freepik.com/vectors/woda -> Woda plik wektorowy utworzone przez macrovector - pl.freepik.com">
+        <img id="bouy" src="assets/bouy.png" alt="https://pl.freepik.com/vectors/woda -> Woda plik wektorowy utworzone przez macrovector - pl.freepik.com">
+        <img id="yacht" src="assets/yacht.png" alt="https://pl.freepik.com/vectors/woda -> Woda plik wektorowy utworzone przez macrovector - pl.freepik.com">
+        <img id="lth" src="assets/lth.png" alt="https://pl.freepik.com/vectors/woda -> Woda plik wektorowy utworzone przez macrovector - pl.freepik.com">        
+        <img id="waves1" src="assets/waves1.png" alt="https://pl.freepik.com/vectors/woda -> Woda plik wektorowy utworzone przez macrovector - pl.freepik.com">
+        <img id="waves2" src="assets/waves2.png" alt="https://pl.freepik.com/vectors/woda -> Woda plik wektorowy utworzone przez macrovector - pl.freepik.com">
+    </div>
 </header>
-<main>
+<main id="about">
     <aside>
         <div class="box">
-            <figure>
-                <img src="">
+            <figure class="self">
+                <img id="foto" src="assets/foto.jpg" alt="photography">
             </figure>
             <figcaption>
                 <h2>
@@ -40,10 +56,10 @@
                 </h3>
             </figcaption>
             <div class="content">
-                <p>Toruń [PL]</p>
+                <p id="city"><i class="icon-location"></i> Toruń [PL]</p>
             </div>
             <div class="content">
-                <p>Kwalifikacje</p>
+                <h3>Kwalifikacje</h3>
                 <ul>
                     <li>Dyplom STCW Oficera Wachtowego</li>
                     <li>Certyfikat DPO Unlimited</li>
@@ -72,12 +88,33 @@
         </div>
     </article>
 </main>
-<div class="bottom">
+<div class="bottom" id="end">
+    <div id="bg">
+        <img id="boat" src="assets/boat.png">
+    </div>
     <div class="contact">
-        Kontakt
+        <h3>Napisz do mnie!</h3>
+        <form>
+            <input type="text" id="name" name="name" placeholder="imię / firma"><br>
+            <input type="text" id="email" name="email" placeholder="adres e-mail"><br>
+            <input type="text" id="tel" name="tel" placeholder="nr telefonu"><br>
+            <textarea id="text" name="text" placeholder="treść wiadomości" rows="7"></textarea><br>
+            <div id="rodo">
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">Zgadzam się na przetwarzanie moich danych osobowych...</label>
+            </div>
+            <input type="submit" id="sub" value="Wyślij">
+        </form>
     </div>
     <footer>
-        Zobacz więcej
+        <div></div>
+        <div class="media">
+            <p id="tag">ZOBACZ WIĘCEJ</p>
+            <p class="externals">
+                <a href="https://www.linkedin.com/in/mateusz-leszniewski-443017163/" target="_blank"><i class="icon-linkedin-squared"></i></a>
+                <a href="https://github.com/Yimmir" target="_blank"><i class="icon-github-squared"></i></a>
+            </p>
+        </div>
     </footer>
 </div>
 </body>
