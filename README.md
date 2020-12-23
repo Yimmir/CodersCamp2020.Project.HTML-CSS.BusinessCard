@@ -21,7 +21,7 @@ Strona tytułowa:
 Główna zawartość:
 - Cześć lewa ze zdjęciem i głównymi elementami
 - Część prawa z poszczególnymi elementami w siatce z 2 kolumnami
-- W przypadku przepełnienia prawa cześć jest przewijana niezaleznie od lewej
+- W przypadku przepełnienia prawa cześć jest przewijana niezależnie od lewej
 - Poszczególne sekcje jako bloki z rzuconym cieniem.
 
 Stopka:
@@ -33,24 +33,24 @@ Stopka:
 
 Strona ma trzy stopnie responsywności w zależności od maksymalnej szerokości ekranu:
 - -512px --> smartfony
-- 512-1024 --> tablety i smarfony w trybie horyzontalnym
+- 512-1024 --> tablety i smartfony w trybie horyzontalnym
 - +1024 --> duże tablety i klasyczne laptopy
 Dodatkowo dla urządzeń bez wskaźnika (czyli głównie ekrany dotykowe) pasek nawigacyjny cały czas zostaje na wierzchu.
 
 * Stopień 1
-    > Strona przekształca się do pionowego układu
-    > Na stronie tytułowej grafiki wypełniają górną część bloku
-    > Logo wraz z tytułami jest wyśrodkowane i zajmuje większość bloku
-    > W sekcji głównej wszystkie części są teraz jeden pod drugim i zajmują cały ekran na szerokość
-    > Sekcja bloków z opisami ma teraz dodatkowy punkt przyciągania scroll'a
-    > W stopce formularz jest wyśrodkowany i zajmuje większość bloku, grafika uzupełniająca na górze
+    - Strona przekształca się do pionowego układu
+    - Na stronie tytułowej grafiki wypełniają górną część bloku
+    - Logo wraz z tytułami jest wyśrodkowane i zajmuje większość bloku
+    - W sekcji głównej wszystkie części są teraz jeden pod drugim i zajmują cały ekran na szerokość
+    - Sekcja bloków z opisami ma teraz dodatkowy punkt przyciągania scroll'a
+    - W stopce formularz jest wyśrodkowany i zajmuje większość bloku, grafika uzupełniająca na górze
 
 * Stopień 2
-    > Strona tytułowa taka sama jak w stopniu pierwszym
-    > Sekcja główna ma dwie kolumny, z lewej kafelek ze zdjęciem i główny opis, z prawej sekcje dodatkowe jedna pod drugą
+    - Strona tytułowa taka sama jak w stopniu pierwszym
+    - Sekcja główna ma dwie kolumny, z lewej kafelek ze zdjęciem i główny opis, z prawej sekcje dodatkowe jedna pod drugą
 
 * Stopień 3
-    > Domyślna wersja strony
+    - Domyślna wersja strony
 
 ## Dalszy rozwój ##
 
