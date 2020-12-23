@@ -356,14 +356,14 @@ article::-webkit-scrollbar {
 }
 
 .bottom{
-    min-height: 100vh;
+    height: 100vh;
     scroll-snap-align: start;
     padding: 50px 0 0 0;
     display: grid;
     grid-template-areas: 
     "bg contact ."
     "footer footer footer";
-    grid-template-rows: 85% 15%;
+    grid-template-rows: 1fr max(15%, 100px);
     grid-template-columns: 50% 30% 20%;
     /* border: var(--blue1) solid;
     border-width: 3px 0 0 0; */
@@ -397,7 +397,7 @@ form{
 }
 
 input[type=text] {
-    height: 40px;
+    height: min(40px, 10%);
 }
 
 input[type=text], textarea{
@@ -407,7 +407,7 @@ input[type=text], textarea{
     width: 100%;
     padding: 5px;
     outline: none;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 textarea{
@@ -417,7 +417,7 @@ textarea{
 #rodo{
     display: flex;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.7em;
     margin: 10px 0 15px;
 }
 
@@ -427,7 +427,7 @@ input[type=checkbox]{
 
 #sub{
     width: 100%;
-    padding: 10px;
+    padding: min(10px, 5%);
 
 }
 
@@ -443,6 +443,7 @@ footer{
     padding: 20px;
     display: flex;
     justify-content: flex-end;
+    font-size: 70%;
 }
 
 .media{
@@ -452,6 +453,7 @@ footer{
 #tag{
     margin: 0;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .externals{
@@ -464,7 +466,7 @@ footer{
     text-decoration: none;
     color:black;
     margin: 0;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 @media only screen and (orientation: portrait) {
@@ -484,6 +486,9 @@ footer{
 }
 
 @media only screen and (max-width : 1024px) {
+    body{
+        scroll-snap-type: y proximity;
+    }
     .box{
         height: unset;
         max-height: calc(100% - 30px);
@@ -503,12 +508,12 @@ footer{
         "hobby";
         grid-template-columns: 100%;
     }
+    .contact > h3 {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width : 512px) {
-    body{
-        scroll-snap-type: y proximity;
-    }
     main{
         flex-flow: column;
         height: unset;
