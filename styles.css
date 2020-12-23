@@ -254,6 +254,7 @@ main {
 aside{
     width: 33%;
     box-sizing: border-box;
+    
 }
 
 .box{
@@ -282,11 +283,13 @@ figcaption > h2{
     text-align: center;
     border: var(--blue1) solid;
     border-width: 0 0 2px;
+    font-size: 1.5em;
 }
 
 figcaption > h3{
     margin: 0 0 30px;
     text-align: center;
+    font-size: 0.9em;
 }
 
 #city{
@@ -463,7 +466,8 @@ footer{
     margin: 0;
     font-size: 3em;
 }
-@media only screen and (max-width : 1024px) and (max-aspect-ratio : 8/7) {
+
+@media only screen and (orientation: portrait) {
     header{
         grid-template-areas: 
         "titlebg"
@@ -475,8 +479,16 @@ footer{
         margin: 0 5% !important;
     }
     #logo{
-        margin: 10px 0 0 0 !important;
-    }   
+        margin: 10px 0 0 0 !important; 
+    }
+}
+
+@media only screen and (max-width : 1024px) {
+    .box{
+        height: unset;
+        max-height: calc(100% - 30px);
+        overflow: scroll;
+    }
     article{
         scroll-snap-align: start;
         scroll-margin-top: 70px;
@@ -490,10 +502,13 @@ footer{
         "lang"
         "hobby";
         grid-template-columns: 100%;
-    } 
+    }
 }
 
-@media only screen and (max-width : 512px){
+@media only screen and (max-width : 512px) {
+    body{
+        scroll-snap-type: y proximity;
+    }
     main{
         flex-flow: column;
         height: unset;
